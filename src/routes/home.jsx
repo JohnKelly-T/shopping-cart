@@ -1,5 +1,5 @@
 function Home() {
-  return <main>This is the homepage</main>;
+  return <main data-testid="home-page">This is the homepage</main>;
 }
 
 export default Home;
