@@ -7,23 +7,30 @@ import Home from "./routes/home";
 import Root from "./routes/root";
 import Shop from "./routes/shop";
 import Cart from "./routes/cart";
+import ErrorPage from "./error-page";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/shop",
-        element: <Shop />,
-      },
-      {
-        path: "/cart",
-        element: <Cart />,
+        errorElement: <ErrorPage />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "/shop",
+            element: <Shop />,
+          },
+          {
+            path: "/cart",
+            element: <Cart />,
+          },
+        ],
       },
     ],
   },
