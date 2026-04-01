@@ -5,23 +5,30 @@ import Root from "../routes/root";
 import Home from "../routes/home";
 import Shop from "../routes/shop";
 import Cart from "../routes/cart";
+import ErrorPage from "../error-page";
 
 const routes = [
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/shop",
-        element: <Shop />,
-      },
-      {
-        path: "/cart",
-        element: <Cart />,
+        errorElement: <ErrorPage />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "/shop",
+            element: <Shop />,
+          },
+          {
+            path: "/cart",
+            element: <Cart />,
+          },
+        ],
       },
     ],
   },
@@ -57,6 +64,14 @@ describe("Navigation", () => {
       render(<RouterProvider router={router} />);
 
       expect(screen.getByTestId(/cart-page/i)).toBeInTheDocument();
+    });
+
+    it("renders error page for non-existent routes", () => {
+      const router = setupRouter("/this-route-does-not-exist");
+
+      render(<RouterProvider router={router} />);
+
+      expect(screen.getByTestId(/error-page/i)).toBeInTheDocument();
     });
   });
 });
