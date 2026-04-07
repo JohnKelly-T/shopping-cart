@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 function Root() {
   return (
     <>
+      <div className="announcement-bar"></div>
       <header>
         <nav>
           <li>
