@@ -1,9 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom";
+import styles from "./root.module.css";
+import classNames from "classnames/bind";
+
+const cx = classNames.bind(styles);
 
 function Root() {
   return (
     <>
-      <div className="announcement-bar"></div>
+      <div className={cx("announcementBar")}>
+        Free shipping on all stores Imaginationwide!
+      </div>
       <header>
         <nav>
           <li>
