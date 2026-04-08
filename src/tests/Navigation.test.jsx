@@ -1,10 +1,10 @@
 import { expect, describe, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
-import Root from "../routes/root";
-import Home from "../routes/home";
-import Shop from "../routes/shop";
-import Cart from "../routes/cart";
+import Root from "../routes/Root/root";
+import Home from "../routes/Home/home";
+import Shop from "../routes/Shop/shop";
+import Cart from "../routes/Cart/cart";
 import ErrorPage from "../error-page";
 
 const routes = [
