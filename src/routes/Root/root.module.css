@@ -8,3 +8,38 @@
   color: white;
   font-size: 0.9rem;
 }
+
+.siteName {
+  font-family: "Tenor Sans";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--maroon);
+}
+
+.shoppingCartIcon {
+  color: var(--maroon);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.headerContainer {
+  padding: 0.6rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerContainer,
+.navBar {
+  width: 100%;
+}
+
+.navBar ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: var(--maroon);
+}
