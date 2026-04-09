@@ -85,6 +85,10 @@
   font-family: Lato;
 }
 
+body {
+  display: flex;
+}
+
 #root {
   width: 100vw;
   min-height: 100vh;
