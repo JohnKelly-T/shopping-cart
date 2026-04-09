@@ -43,3 +43,45 @@
   text-decoration: none;
   color: var(--maroon);
 }
+
+.footerContainer {
+  display: flex;
+  background-color: var(--maroon);
+  color: white;
+  padding: 2.5rem 4rem;
+}
+
+.footerContainer .siteName {
+  color: inherit;
+  flex: 1;
+}
+
+.footerListLabel {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerLinksContainer li {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.attribution {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 4rem;
+  background-color: var(--maroon);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.attribution a {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: inherit;
+}
