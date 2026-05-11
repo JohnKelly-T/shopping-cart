@@ -1,35 +1,22 @@
-import { NavLink, Link, Outlet } from "react-router-dom";
-import { Handbag } from "lucide-react";
+import { NavLink, Link, Outlet, useLocation } from "react-router-dom";
 import styles from "./root.module.css";
 import classNames from "classnames/bind";
+import Header from "../../components/Header/Header";
 
 const cx = classNames.bind(styles);
 
 function Root() {
+  const location = useLocation();
+
   return (
     <>
-      <div className={cx("announcementBar")}>
-        Free shipping on all stores Imaginationwide!
-      </div>
-      <header className={cx("headerContainer")}>
-        <nav className={cx("navBar")}>
-          <ul>
-            <li>
-              <Link to="/" className={cx("siteName")}>
-                Faux.
-              </Link>
-            </li>
-            <li>
-              <NavLink to="/shop">Shop</NavLink>
-            </li>
-            <li>
-              <Link to="/cart" className={cx("shoppingCartLink")}>
-                <Handbag className={cx("shoppingCartIcon")} />
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      {location.pathname == "/" ? (
+        <div className={cx("announcementBar")}>
+          Free shipping on all stores Imaginationwide!
+        </div>
+      ) : (
+        <Header />
+      )}
       <Outlet />
       <footer>
         <div className={cx("footerContainer")}>
