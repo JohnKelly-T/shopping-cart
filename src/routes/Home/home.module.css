@@ -67,23 +67,3 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-
-.shopNowLink {
-  position: absolute;
-  right: 0;
-  bottom: 15%;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #cc0033;
-  padding: 0.5rem 3rem;
-  background-color: white;
-  transform: skew(-20deg) translateX(5%);
-  transition: background border 200ms ease;
-}
-
-.shopNowLink:active {
-  background-color: #cc0033;
-  color: white;
-  outline: 2px solid white;
-}
