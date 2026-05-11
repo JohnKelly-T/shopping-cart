@@ -24,10 +24,6 @@ function Home() {
             UNREAL DEALS FOR UNREAL THINGS. 50% OFF FOR EVERY PURCHASE.
           </div>
         </div>
-
-        <Link to="/shop" className={cx("shopNowLink")}>
-          Shop Now
-        </Link>
       </div>
     </main>
   );
