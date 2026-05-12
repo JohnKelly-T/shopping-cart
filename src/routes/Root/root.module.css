@@ -9,6 +9,13 @@
   font-size: 0.9rem;
 }
 
+.siteName {
+  font-family: "Tenor Sans";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
 .footerContainer {
   display: flex;
   background-color: var(--maroon);
