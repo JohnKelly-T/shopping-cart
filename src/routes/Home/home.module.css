@@ -7,9 +7,9 @@
 .heroSection {
   width: 100%;
   background-image: radial-gradient(
-    ellipse 80% 250% at 100% 100%,
-    #cc0033 50%,
-    #e8f0c2 90%
+    ellipse 60% 100% at 50% 40%,
+    #98151c 0%,
+    #6b0f14 100%
   );
 }
 
@@ -35,7 +35,7 @@
 }
 
 .headlineContainer {
-  color: var(--maroon);
+  color: #f3dee7;
   gap: 0.5rem;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .promotional-container {
-  color: white;
+  color: #f3dee7;
   text-align: center;
 }
 
