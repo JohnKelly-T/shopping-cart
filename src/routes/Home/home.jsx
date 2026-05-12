@@ -10,7 +10,7 @@ function Home() {
   return (
     <main data-testid="home-page" className={cx("homepage")}>
       <div className={cx("heroSection")}>
-        <Header />
+        <Header variant="homepage" />
         <div className={cx("banner")}>
           <div className={cx("headlineContainer")}>
             <h1 className={cx("headline")}>

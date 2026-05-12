@@ -5,9 +5,9 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 
-function Header() {
+function Header({ variant = "default" }) {
   return (
-    <header className={cx("headerContainer")}>
+    <header className={cx("headerContainer", styles[variant])}>
       <nav className={cx("navBar")}>
         <ul>
           <li>

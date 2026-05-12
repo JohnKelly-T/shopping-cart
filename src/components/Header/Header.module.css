@@ -1,19 +1,28 @@
+.headerContainer {
+  padding: 0.6rem 2rem;
+}
+
+.headerContainer.default {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fbf4f6;
+  color: var(--maroon);
+}
+
+.headerContainer.homepage {
+  color: white;
+}
+
 .siteName {
   font-family: "Tenor Sans";
   font-size: 1.5rem;
   text-decoration: none;
-  color: var(--maroon);
+  color: inherit;
 }
 
 .shoppingCartIcon {
-  color: var(--maroon);
+  color: inherit;
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.headerContainer {
-  padding: 0.6rem 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .headerContainer,
@@ -30,5 +39,5 @@
 
 .navBar a {
   text-decoration: none;
-  color: var(--maroon);
+  color: inherit;
 }
