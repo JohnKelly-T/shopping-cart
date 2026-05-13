@@ -17,6 +17,7 @@ function Home() {
             <p className={cx("subheading")}>
               Explore a curated collection of the best non-existent products.
             </p>
+            <Link className={cx("seeCollectionLink")}>See our collection</Link>
           </div>
           <img src={bannerModel} alt="banner-female-model" />
           <div className={cx("promotional-container")}>
@@ -24,6 +25,7 @@ function Home() {
             <div className={cx("promotional-description")}>
               UNREAL DEALS FOR UNREAL THINGS. 50% OFF FOR EVERY PURCHASE.
             </div>
+            <Link className={cx("shopNowLink")}>Shop now!</Link>
           </div>
         </div>
       </div>
