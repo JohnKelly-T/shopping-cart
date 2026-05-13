@@ -14,7 +14,7 @@
 
 .siteName {
   font-family: "Cormorant Garamond";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: inherit;
 }
@@ -42,4 +42,8 @@
   font-family: "Cormorant Garamond";
   text-decoration: none;
   color: inherit;
+}
+
+.categoryLink {
+  font-size: 1.2rem;
 }
