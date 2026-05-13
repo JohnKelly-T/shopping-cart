@@ -13,9 +13,7 @@ function Home() {
         <Header variant="homepage" />
         <div className={cx("banner")}>
           <div className={cx("headlineContainer")}>
-            <h1 className={cx("headline")}>
-              <span>Beyond The</span> Tangible.
-            </h1>
+            <h1 className={cx("headline")}>Beyond The Tangible.</h1>
             <p className={cx("subheading")}>
               Explore a curated collection of the best non-existent products.
             </p>
