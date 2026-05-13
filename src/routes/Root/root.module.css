@@ -1,12 +1,12 @@
 .announcementBar {
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #5a0c10;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .siteName {
