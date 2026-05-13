@@ -36,7 +36,7 @@
 
 .headlineContainer {
   color: #f3dee7;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .banner img {
@@ -47,12 +47,15 @@
 .headline {
   display: flex;
   flex-direction: column;
+  font-family: "Cormorant Garamond";
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: normal;
 }
 
 .subheading {
+  font-family: "Cormorant Garamond";
   font-size: 1.2rem;
+  font-style: italic;
 }
 
 .promotional-container {
