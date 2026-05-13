@@ -13,6 +13,10 @@
   );
 }
 
+.heroSection a {
+  text-decoration: none;
+}
+
 .banner {
   display: flex;
   justify-content: space-around;
@@ -58,9 +62,23 @@
   font-style: italic;
 }
 
+.seeCollectionLink {
+  border: 2px solid #f3dee7;
+  width: fit-content;
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  font-family: "Cormorant Garamond";
+  font-size: 1.2rem;
+  color: inherit;
+}
+
 .promotional-container {
-  color: #f3dee7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 1rem;
+  color: #f3dee7;
 }
 
 .promotional-heading {
@@ -71,4 +89,17 @@
 .promotional-description {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.shopNowLink {
+  background: #f2d9a3;
+  width: fit-content;
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-family: "Lato";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--maroon);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
