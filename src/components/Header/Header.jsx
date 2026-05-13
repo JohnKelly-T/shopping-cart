@@ -16,7 +16,9 @@ function Header({ variant = "default" }) {
             </Link>
           </li>
           <li>
-            <NavLink to="/shop">Shop</NavLink>
+            <NavLink to="/shop" className={cx("categoryLink")}>
+              Shop
+            </NavLink>
           </li>
           <li>
             <Link to="/cart" className={cx("shoppingCartLink")}>
