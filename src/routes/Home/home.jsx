@@ -14,10 +14,10 @@ function Home() {
         <div className={cx("banner")}>
           <div className={cx("headlineContainer")}>
             <h1 className={cx("headline")}>
-              <span>Faux.</span> The Finest Replicas.
+              <span>Beyond The</span> Tangible.
             </h1>
             <p className={cx("subheading")}>
-              Explore a curated collection of exquisite fake products.
+              Explore a curated collection of the best non-existent products.
             </p>
           </div>
           <img src={bannerModel} alt="banner-female-model" />
