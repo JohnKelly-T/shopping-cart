@@ -1,4 +1,7 @@
 .headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0.6rem 2rem;
 }
 
@@ -28,6 +31,10 @@
 .headerContainer,
 .navBar {
   width: 100%;
+}
+
+.navBar {
+  max-width: 2000px;
 }
 
 .navBar ul {
